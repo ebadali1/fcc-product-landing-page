@@ -1,0 +1,285 @@
+body {
+  font-family: 'Anek Odia', sans-serif;
+
+  background-color: #eee;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  min-height: 70px;
+  padding: 0px 43px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: #ffc107;
+  animation-name: backc;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes backc {
+  from {
+    background-color: #ffc107;
+  }
+
+  to {
+    background-color: #0bf4ac;
+
+  }
+}
+
+#img-container {
+  width: 50vw;
+}
+
+#img-container img {
+  height: 100%;
+  width: 100%;
+  max-width: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+}
+
+nav {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#navbar-list {
+  list-style: none;
+  display: flex;
+  width: 35vw;
+  justify-content: space-between;
+}
+
+#navbar-list a {
+  color: #000;
+  text-decoration: none;
+}
+
+#section-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  /* margin-top: 50px;} */
+}
+
+#section-form input[type='email'] {
+  padding: 6px;
+  width: 300px;
+}
+
+#section-form input[type='email']:hover {
+  transform: scale(2);
+}
+
+
+#section-form input[type='submit'] {
+  padding: 6px;
+  font-weight: 800;
+  width: 151px;
+  height: 30px;
+  border-radius: 10px;
+  background: #ffeb3b;
+  ;
+}
+
+
+#section-form input[type='submit']:hover {
+  background-color: #ffc107;
+}
+
+#icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: rgb(158, 110, 52);
+}
+
+
+.icon-content {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+#features {
+  margin-top: 120px;
+}
+
+.fa-fire,
+.fa-truck-fast,
+.fa-car-battery {
+  font-weight: 900;
+  font-size: 4em;
+}
+
+#container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+#working {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+#price {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.level {
+  font-weight: 800;
+  background-color: #ffeb3b;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.product h2 {
+  padding-top: 15px;
+}
+
+.product ol li {
+  padding: 10px 0px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 0;
+  margin: 15px 0;
+  background-color: #ffeb3b;
+  font-weight: 400;
+}
+
+.btn:hover {
+  background-color: #ffc107;
+
+}
+
+#footer {
+  background-color: #ffc107;
+  width: 100%;
+  padding: 10px;
+  animation-name: backc;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+#footer ul a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+#footer ul li {
+  padding: 0 10px;
+}
+
+#footer span {
+  justify-content: center;
+  margin-top: 8px;
+  display: flex;
+}
+
+
+@media (max-width: 800px) {
+  #price {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  #img-container {
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 650px) {
+
+  #navbar-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+@media (max-width: 650px) {
+  #nav-bar {
+    margin-top: 10px;
+
+
+  }
+}
+
+@media (max-width: 650px) {
+  #header {
+    flex-direction: column;
+
+  }
+}
+
+@media (max-width: 650px) {
+  #section-form {
+    margin-top: 130px;
+    /* margin-top: 100px; */
+  }
+}
+
+.icon:hover {
+  transform: scale(2);
+}
